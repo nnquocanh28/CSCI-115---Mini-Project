@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font */
+html {
+    font-family: sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* navbar */
+.navbar {
+    background-color: #fff;
+    max-width: 100%;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    border-bottom: 1px solid #000;
+}
+
+.navbar-left {
+    display: flex;
+    line-height: 100px;
+}
+
+.navbar-left a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.navbar-left a:after {
+    content: "";
+    position: absolute;
+    background-color: #3c5e2c;
+    height: 3px;
+    width: 0;
+    left: 35px;
+    bottom: -10px;
+    transition: all .3s ease;
+}
+
+.navbar-left a:hover:after {
+    width: 50%;
+}
+
+.navbar-logo {
+    height: 100px;
+}
+
+.navbar-right {
+    display: flex;
+    line-height: 100px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.navbar-right a:after {
+    content: "";
+    position: absolute;
+    background-color: #3c5e2c;
+    height: 3px;
+    width: 0;
+    left: 45px;
+    bottom: -10px;
+    transition: all .3s ease;
+}
+
+.navbar-right a:hover:after {
+    width: 50%;
+}
+
+/* wrapper */
+.wrapper {
+    margin: 40px 0;
+    width: 1200px;
+    margin: 60px auto;
+}
+
+.wrapper-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col1-item, .col1-item2 {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.col1-item3, .col1-item4 {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.col1-item5, .col1-item6 {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.col1-item7, .col1-item8 {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.col1-section {
+    width: 400px;
+}
+
+.col2-item {
+    background-color: #EEEE;
+    padding: 30px 26px;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+}
+
+.col2-text1 {
+    font-family: monospace;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.col2-text2 {
+    font-family: monospace;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.col2-input {
+    display: flex;
+    justify-content: center;
+}
+
+.email-input {
+    padding: 6px 8px;
+}
+
+.register-button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px'
+}
+
+.register-button a:hover {
+    color: #000;
+}
+
+.col1-img {
+    width: 244px;
+    height: 164px;
+    object-fit: cover;
+}
+
+.col2-logo {
+    width: 180px;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .col1-section2 {
+    display: block;
+}
+
+#check:checked ~ label {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #000;
+    color: #000;
+    padding: 8px 16px;
+    opacity: 30%;
+    width: 100%;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+label:hover {
+    background-color: #ccc;
+}
+
+.col1-section {
+    margin-top: 20px;
+    margin: 0 40px;
+}
+
+.col1-section2 {
+    display: none;
+}
+
+.col1-text-heading {
+    font-family: monospace;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.col1-text-description {
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #000;
+}
+
+.footer-left, .footer-right {
+    margin: 40px 120px;
+}
+
+.footer-left-heading {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.footer-left-icon i {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.footer-right-input {
+    display: flex;
+    justify-content: center;
+}
+
+.register-button {
+    background-color: #3c5e2c;
+    height: 30px;
+    padding: 8px 12px;
+}
+
+.footer-register-button {
+    color: #fff;
+    font-family: monospace;
+}
+
+.footer-right-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.footer-right-description {
+    font-family: cursive;
+    margin: 6px 0;
+}
+
+.email-input {
+    width: 50%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: #e0e0de;
+}
+
+.footer-left, .footer-right {
+    margin-bottom: 40px;
+}
+

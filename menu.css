@@ -1,0 +1,321 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font */
+html {
+    font-family: sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* navbar */
+.navbar {
+    background-color: #fff;
+    max-width: 100%;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    border-bottom: 1px solid #959595;
+}
+
+.navbar-left {
+    display: flex;
+    line-height: 100px;
+}
+
+.navbar-left a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.navbar-left a:after {
+    content: "";
+    position: absolute;
+    background-color: #3c5e2c;
+    height: 3px;
+    width: 0;
+    left: 35px;
+    bottom: -10px;
+    transition: all .3s ease;
+}
+
+.navbar-left a:hover:after {
+    width: 50%;
+}
+
+.navbar-logo {
+    height: 100px;
+}
+
+.navbar-right {
+    display: flex;
+    line-height: 100px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.navbar-right a:after {
+    content: "";
+    position: absolute;
+    background-color: #3c5e2c;
+    height: 3px;
+    width: 0;
+    left: 45px;
+    bottom: -10px;
+    transition: all .3s ease;
+}
+
+.navbar-right a:hover:after {
+    width: 50%;
+}
+
+/* content */
+.content {
+    margin: 40px 0;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content-section-left, .content-section-right {
+    padding: 0 50px;
+}
+
+.content-section-left {
+    border-right: 2px solid #959595;
+}
+
+.content-section-left a {
+    text-decoration: none;
+    color: #000;
+    font-family: cursive;
+    line-height: 4;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.content-section-left a:hover {
+    color: green;
+}
+
+.content-section-left a {
+    position: relative;
+}
+
+.content-section-left a:after {
+    content: "";
+    position: absolute;
+    background-color: green;
+    height: 3px;
+    width: 0;
+    right: 55px;
+    top: 10px;
+    transition: all .2s ease;
+}
+
+.content-section-left a:hover:after {
+    width: 30%;
+}
+
+.content-section-right {
+    padding-top: 20px;
+}
+
+.section1-heading {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;   
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+.section1-items {
+    display: flex;
+}
+
+.item1, .item2 {
+    padding: 0 20px;
+}
+
+.item1-img {
+    width: 200px;
+}
+
+.item2-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item1-heading {
+    margin: 10px 0;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.item1-price {
+    font-family: cursive;
+}
+
+.item2-heading {
+    width: 200px;
+    margin: 10px 0;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.item2-price {
+    font-family: cursive;
+}
+
+/* section2 */
+.section2-item1-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section2-item2-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section2-item3-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section2-item1-img, .section2-item2-img {
+    margin-right: 40px;
+}
+
+.section2 {
+    padding: 70px 20px 0;
+}
+
+.section2-heading {
+    font-family: monospace;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section2-list {
+    display: flex;
+}
+
+.section2-item1-heading, .section2-item2-heading, .section2-item3-heading {
+    font-family: monospace;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.section2-item1-price, .section2-item2-price, .section2-item3-price {
+    font-family: cursive;
+}
+
+/* Section 3 */
+.section3 {
+    padding: 70px 20px 0;
+}
+
+.section3-heading {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section3-list {
+    display: flex;
+}
+
+.section3-item1-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section3-item2-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section3-item3-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section3-item1-img, .section3-item2-img {
+    margin-right: 40px;
+}
+
+.section3-item1-heading, .section3-item2-heading, .section3-item3-heading {
+    font-family: monospace;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.section3-item1-price, .section3-item2-price, .section3-item3-price {
+    font-family: cursive;
+}
+
+/* Section 4 */
+.section4 {
+    padding: 70px 20px 0;
+}
+
+.section4-heading {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section4-item1-img, .section4-item2-img, .section4-item3-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.section4-list {
+    display: flex;
+}
+
+.section4-item1-heading, .section4-item2-heading, .section4-item3-heading {
+    font-family: monospace;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.section4-item1-price, .section4-item2-price, .section4-item3-price {
+    font-family: cursive;
+}

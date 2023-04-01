@@ -1,0 +1,482 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font */
+html {
+    font-family: sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* navbar */
+.navbar {
+    background-color: #fff;
+    max-width: 100%;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-family: cursive;
+}
+
+.navbar-left {
+    display: flex;
+    line-height: 100px;
+}
+
+
+.navbar-left a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.navbar-left a:after {
+    content: "";
+    position: absolute;
+    background-color: #3c5e2c;
+    height: 3px;
+    width: 0;
+    left: 35px;
+    bottom: -10px;
+    transition: all .3s ease;
+}
+
+.navbar-left a:hover:after {
+    width: 50%;
+}
+
+.navbar-logo {
+    height: 100px;
+}
+
+.navbar-right {
+    display: flex;
+    line-height: 100px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.navbar-right a:after {
+    content: "";
+    position: absolute;
+    background-color: #3c5e2c;
+    height: 3px;
+    width: 0;
+    left: 45px;
+    bottom: -10px;
+    transition: all .3s ease;
+}
+
+.navbar-right a:hover:after {
+    width: 50%;
+}
+
+/* slider */
+.slider {
+    margin-top: 100px;
+    position: relative;
+}
+
+.slider-img {
+    width: 1900px;
+    height: 100%;
+}
+
+.slider-content {
+    position: absolute;
+    bottom: 0;
+    background-color: #fff1d0e6;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.slider-content-text1 {
+    font-family: monospace;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.slider-content-text2 {
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.slider-logo {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 140px;
+    text-align: center;
+}
+
+.slider-slogan {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Pacifico';
+}
+
+/* content */
+.content {
+    margin-top: 40px;
+    position: relative;
+}
+
+.content1 {
+    width: 960px;
+    height: 486px;
+    margin: 0px auto;
+}
+
+.content1-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-button {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn a {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 60px;
+    border: 1.5px solid #fff;
+    font-size: 18px;
+    background: none;
+    color: #fff;
+    position: relative;
+    transition: all .8s ease;
+}
+
+.btn a:hover {
+    color: #000;
+    background-color: #fff1d0e6;
+    cursor: pointer;
+}
+
+/* wrapper */
+.wrapper {
+    width: 960px;
+    height: 100%;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+.wrapper-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-left {
+    position: relative;
+}
+
+.wrapper-left-btn {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s ease;
+}
+
+.bartending-button {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #fff1d0e6;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.wrapper-left-btn:hover {
+    bottom: 155px;
+}
+
+.wrapper-right {
+    position: relative;
+}
+
+.wrapper-right-btn {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s ease;
+}
+
+.menu-button {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #fff1d0e6;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.wrapper-right-btn:hover {
+    bottom: 155px;
+}
+
+.bartending-img {
+    width: 465px;
+    height: 354.56px;
+    object-fit: cover;
+}
+
+.menu-img {
+    width: 465px;
+    object-fit: cover;
+}
+
+.wrapper-content2 {
+    margin-top: 40px;
+    position: relative;
+    max-width: 960px;
+}
+
+.wrapper-content2-section {
+    position: absolute;
+    background-color: #fff1d0e6;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.news-heading {
+    font-size: 25px;
+    font-family: monospace;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+
+.line-between {
+    content: "";
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    height: 4px;
+}
+
+.news-description {
+    line-height: 1.5;
+    padding: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper-content3 {
+    max-width: 960px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.content3-img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.wrapper-content3-career {
+    position: absolute;
+    background-color: #fff1d0e6;
+    bottom: 60px;
+    width: 460px;
+    height: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 23px 15px;
+    transition: all .3s ease;
+}
+
+.wrapper-content3-career:hover {
+    bottom: 65px;
+    cursor: pointer;
+}
+
+.content3-heading {
+    font-family: monospace; 
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.content3-line-between {
+    content: "";
+    height: 3px;
+    background-color: #000;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content3-description {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper-content4 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000; 
+}
+
+.col1-content, .col2-content {
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    border: 1px solid #3c5e2c;
+    padding: 3px 10px;
+    margin-top: 10px;
+    transition: all .3s ease;
+}
+
+.col3-content, .col4-content {
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    border: 1px solid #3c5e2c;
+    padding: 3px 10px;
+    margin-top: 10px;
+    transition: all .3s ease;
+}
+
+.col1-content:hover {
+    background-color: #3c5e2c;
+}
+
+.col2-content:hover {
+    background-color: #3c5e2c;
+}
+
+.col3-content:hover {
+    background-color: #3c5e2c;
+}
+
+.col4-content:hover {
+    background-color: #3c5e2c;
+}
+
+.wrapper-content4 a:hover {
+    color: #fff;
+}
+
+.wrapper-border-bottom {
+    border: 1px solid #3c5e2c;
+    margin: 30px 0;
+}
+
+.footer {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left-heading {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.footer-left-icon i {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.footer-right-input {
+    display: flex;
+    justify-content: center;
+}
+
+.register-button {
+    background-color: #3c5e2c;
+    height: 30px;
+    padding: 8px 12px;
+}
+
+.footer-register-button {
+    color: #fff;
+    font-family: monospace;
+}
+
+.footer-right-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.footer-right-description {
+    font-family: cursive;
+    margin: 6px 0;
+}
+
+.email-input {
+    width: 50%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: #e0e0de;
+}
+
+.footer-left, .footer-right {
+    margin-bottom: 40px;
+}
